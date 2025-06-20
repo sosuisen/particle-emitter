@@ -1,6 +1,6 @@
 {
   "name": "@sosuisen/particle-emitter",
-  "version": "6.0.0",
+  "version": "6.0.1",
   "main": "lib/particle-emitter.js",
   "module": "lib/particle-emitter.es.js",
   "bundle": "dist/particle-emitter.js",
@@ -17,7 +17,7 @@
     "clean": "rimraf docs/docs docs/dist .publish",
     "lint": "eslint --ext .ts src",
     "prebuild": "npm run lint",
-    "build": "rollup -c --bundleConfigAsCjs && yarn build:min && yarn build:dts",
+    "build": "rollup -c --bundleConfigAsCjs && npm run build:min && npm run build:dts",
     "build:min": "terser dist/particle-emitter.js -c -m -o dist/particle-emitter.min.js --source-map \"content='dist/particle-emitter.js.map',includeSources=true,filename='dist/particle-emitter.min.js.map',url='particle-emitter.min.js.map'\" --comments \"/particle-emitter.js - /\"",
     "build:dts": "tsc --noEmit false --declaration --emitDeclarationOnly --declarationDir lib",
     "postbuild": "ncp dist docs/dist",
