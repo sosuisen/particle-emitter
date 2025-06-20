@@ -1,5 +1,5 @@
 {
-  "name": "@pixi/particle-emitter",
+  "name": "@sosuisen/particle-emitter",
   "version": "6.0.0",
   "main": "lib/particle-emitter.js",
   "module": "lib/particle-emitter.es.js",
@@ -58,10 +58,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/pixijs/particle-emitter"
+    "url": "https://github.com/sosuisen/particle-emitter"
   },
   "bugs": {
-    "url": "https://github.com/pixijs/particle-emitter/issues"
+    "url": "https://github.com/sosuisen/particle-emitter/issues"
   },
   "files": [
     "dist/",
@@ -85,5 +85,5 @@
       "test/pixi-v6-module"
     ]
   },
-  "private": true
+  "private": false
 }
